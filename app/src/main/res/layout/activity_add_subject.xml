@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:background="@color/darker"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="650dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:background="#00ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00ffffff"
+                app:backgroundTint="#00ffffff"
+                app:iconTint="#00ffffff"
+                app:rippleColor="#00ffffff"/>
+
+            <Spinner
+                android:id="@+id/nm"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="9dp"
+                app:backgroundTint="#00FFFFFF" />
+
+            <Button
+                android:id="@+id/button5"
+                android:background="#00ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"/>
+            <TextView
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/Blanco"
+                android:gravity="center"
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:text="Comienzo de clase:"/>
+
+            <TimePicker
+                android:id="@+id/t1"
+                style="@android:style/Widget.Material.Light.TimePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:theme="@style/NumberPickerStyle"
+                android:timePickerMode="spinner" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="11dp"
+                app:backgroundTint="#00FFFFFF" />
+
+            <TextView android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/Blanco"
+                android:gravity="center"
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="Final de clase:"/>
+
+            <TimePicker
+                android:id="@+id/t2"
+                style="@style/NumberPickerStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:theme="@style/NumberPickerStyle"
+                android:timePickerMode="spinner" />
+            <Button
+                android:background="#00ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:backgroundTint="#00ffffff"
+                app:iconTint="#00ffffff"
+                app:rippleColor="#00ffffff"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_marginBottom="0dp"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/button2"
+            android:background="#00ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:backgroundTint="#00ffffff"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/badd"
+            android:layout_width="67dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:clickable="true"
+            android:foregroundGravity="center"
+            app:backgroundTint="@color/purple_700"
+            app:srcCompat="@mipmap/bt_cruz_foreground"
+            app:tint="@color/Blanco" />
+
+        <Button
+            android:id="@+id/button3"
+            android:background="#00ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:backgroundTint="#00ffffff"/>
+    </LinearLayout>
+</RelativeLayout>

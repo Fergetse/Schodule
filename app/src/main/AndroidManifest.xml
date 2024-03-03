@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.APlus.Schodule">
+
+    <uses-sdk android:minSdkVersion="28" android:targetSdkVersion="31"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        android:minSdkVersion="28" />
+
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <application
+        android:requestRawExternalStorageAccess="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Schodule"
+        android:testOnly="false"
+        android:extractNativeLibs="true"
+        android:usesCleartextTraffic="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:requestLegacyExternalStorage="true">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Schodule.NoActionBar"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity  android:exported="true" android:name="com.APlus.Schodule.ui.tic_tac_toe"/>
+        activity android:name="com.APlus.Schodule.ui.tools.WebPage_Activity"/>
+        <activity  android:exported="true" android:name="com.APlus.Schodule.ui.form.form_ci"/>
+        <activity  android:exported="true" android:name="com.APlus.Schodule.ui.home.AddSubject"
+            android:screenOrientation="portrait"/>
+        <activity  android:exported="true" android:name="com.APlus.Schodule.ui.apuntes.Activity_Icons"
+            android:screenOrientation="portrait"/>
+        <activity  android:exported="true" android:name="com.APlus.Schodule.ui.apuntes.Activity_Extensiones"
+            android:screenOrientation="portrait"/>
+        activity android:name="com.APlus.Schodule.ui.apuntes.GridViewCustomAdapter"/>
+        <activity  android:exported="true" android:name="com.APlus.Schodule.ui.tareas.Done_Homework"/>
+        activity android:name="com.APlus.Schodule.ui.form.FormFragment"/>
+        <activity  android:exported="true" android:name="com.APlus.Schodule.ui.apuntes.send_apunte_01_2"
+            android:screenOrientation="portrait"/>
+        <activity  android:exported="true" android:label="@string/activity_send_nom_materias"
+            android:name="com.APlus.Schodule.ui.apuntes.send_nom_materias"
+            android:screenOrientation="portrait"/>
+        <activity  android:exported="true" android:name="com.APlus.Schodule.ui.apuntes.send_apunte_01"
+            android:screenOrientation="portrait"/>
+        activity android:label="@string/activity_slideshow_calculadora_c"
+        android:name="eventos.Slideshow_calculadoraC"
+        android:screenOrientation="portrait"/>
+        receiver android:name="com.APlus.Schodule.ui.tools.MyBroadcastReceiver"
+        android:enabled="true" android:exported="true"/>
+        activity android:label="@string/activity_tools_alarms"
+        android:name="com.APlus.Schodule.ToolsAlarms"
+        android:screenOrientation="portrait"/>
+
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.APlus.Schodule.provider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+
+        provider
+        android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+        android:exported="false"
+        android:multiprocess="true"
+        android:authorities="com.APlus.Schodule.lifecycle-process"/>
+
+    </application>
+
+</manifest>

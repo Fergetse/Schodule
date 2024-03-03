@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/darker"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/bt_1"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:src="@mipmap/bt_cruz_foreground"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="12dp"
+        android:layout_alignParentEnd="true"
+        app:backgroundTint="@color/Blanco"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/Bot_nvaTarea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bt_1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:src="@mipmap/bt_cruz_foreground"
+        android:visibility="invisible"
+        app:backgroundTint="@color/teal_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/Bt_historial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Bot_nvaTarea"
+        android:layout_alignEnd="@+id/Bot_nvaTarea"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:src="@mipmap/ic_bot_ant_foreground"
+        android:visibility="invisible"
+        app:backgroundTint="@color/Blanco" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:background="@color/darker"
+                android:backgroundTint="@color/darker"
+                app:backgroundTint="@color/darker" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/bot_fecha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:text="Fecha"
+                    android:textColor="@color/Blanco"
+                    app:backgroundTint="@color/colorPrimary" />
+
+                <Button
+                    android:id="@+id/fecha_selected"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/Blanco"
+                    app:backgroundTint="@color/colorPrimary"
+                    app:rippleColor="#00ffffff" />
+            </LinearLayout>
+            <Spinner
+                android:textColor="#ffffff"
+                android:textColorHint="#9f9f9f"
+                android:gravity="center"
+                android:id="@+id/mat_tar"
+                android:background="#333333"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:hint="Materia"/>
+            <!-- AutoCompleteTextView\10
+            android:id=&quot;@+id/mat_tar&quot;\10
+            android:layout_width=&quot;match_parent&quot;\10
+            android:layout_height=&quot;44dp&quot;\10
+            android:background=&quot;#333333&quot;\10
+            android:gravity=&quot;center&quot;\10
+            android:hint=&quot;Materia&quot;\10
+            android:textColor=&quot;#FFFFFF&quot;\10
+            android:textColorHint=&quot;#9F9F9F&quot; -->
+            <Button
+                android:id="@+id/button2"
+                android:background="#00ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:backgroundTint="#00ffffff"/>
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/swipeRefreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="588dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/ListaTareas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/darker"
+                    android:cacheColorHint="@color/Blanco"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/T_B_REC"
+        android:visibility="invisible"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/Bt_historial"
+        android:layout_marginEnd="0dp"
+        android:layout_alignEnd="@+id/Bt_historial"
+        app:backgroundTint="@color/primary"
+        app:srcCompat="@mipmap/ic_bot_clock_foreground"/>
+
+    <ImageButton
+        android:id="@+id/def_bt"
+        android:layout_width="133dp"
+        android:layout_height="88dp"
+        android:layout_above="@+id/Bt_historial"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toStartOf="@+id/T_B_REC"
+        android:layout_toRightOf="@+id/T_B_REC"
+        android:background="#00ffffff"
+        android:src="@drawable/bt_record_foreground"
+        android:visibility="invisible" />
+
+    <TextView
+        android:textSize="10sp"
+        android:textStyle="italic"
+        android:textColor="@color/Blanco"
+        android:id="@+id/textView5"
+        android:visibility="invisible"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="36dp"
+        android:text="Recordatorio"
+        android:layout_alignRight="@+id/def_bt"
+        android:layout_alignBottom="@+id/def_bt"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@+id/T_B_REC"/>
+</RelativeLayout>

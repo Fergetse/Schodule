@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:orientation="vertical"
+    android:id="@+id/layout_add"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <EditText
+        android:id="@+id/etAdd"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_edit_text"
+        android:gravity="center"
+        android:hint="Título"
+        android:textColor="@color/blanco100"
+        android:textColorHint="@color/ic_launcher_background"></EditText>
+
+    <EditText
+        android:id="@+id/etcont"
+        android:layout_width="match_parent"
+        android:layout_height="161dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_edit_text2"
+        android:gravity="center"
+        android:hint="contenido"
+        android:textColor="@color/darker"
+        android:textColorHint="@color/blanco100"></EditText>
+</LinearLayout>

@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">Schodule +</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="REC">ESTABLECE UN RECORDATORIO PARA TUS TAREAS</string>
+
+    <string name="activity_send_nom_materias">Mis Materias</string>
+    <string name="activity_send_principal_apmaterias">Mis Apuntes y Materias</string>
+    <string name="activity_slideshow_calculadora_c">Calculadora Científica</string>
+    <string name="activity_tools_alarms">Crear Alarma</string>
+    <string name="ap_b_apm">Mis Materias</string>
+    <string name="ap_b_nm">Agregar Materias</string>
+
+    <string name="b_h_b">Buscar</string>
+    <string name="b_h_g">Guardar horario</string>
+
+    <string name="c_b_c">Calcular</string>
+    <string name="c_b_cc">Calculadora Científica</string>
+    <string name="c_rb_d">Dividir</string>
+    <string name="c_rb_m">Multiplicar</string>
+    <string name="c_rb_r">Restar</string>
+    <string name="c_rb_s">Sumar</string>
+    <string name="c_t_pv">Ingresa tu primer valor</string>
+    <string name="c_t_sv">Ingresa tu segundo valor</string>
+    <string name="c_tv_r">Resultado</string>
+    <string name="cap_b_admg">Guardar apunte</string>
+    <string name="cap_b_admv">Ver mis apuntes</string>
+    <string name="cap_b_fda">Fotos de apuntes / clases</string>
+    <string name="cap_b_gm">Guardar</string>
+    <string name="cap_b_ndm">Notas de la materia</string>
+    <string name="cap_b_vmf">Ver mis fotos</string>
+    <string name="cap_t_adm">Anota aquí, recuerda seleccionar una fecha.</string>
+    <string name="cap_t_ndf">Nombre / fecha de mi foto</string>
+    <string name="change_time">Cambiar Hora</string>
+
+    <string name="da_b_ca">| Configurar mi Alarma |</string>
+    <string name="da_b_ga">Guardar Alarma</string>
+    <string name="da_tv_na">Selecciona el número de alarma</string>
+    <string name="dap_b_ca">| Mis Materias |</string>
+
+    <string name="h_mt_m">Materias</string>
+    <string name="h_t_d">Día de la semana</string>
+
+    <string name="ht_b_cambhora">Hora</string>
+    <string name="hw_b_cambhora">Hora</string>
+    <string name="menu_gallery">Tareas</string>
+    <string name="menu_home">Horario</string>
+    <string name="menu_send">Materias</string>
+    <string name="menu_share">Ecosia</string>
+
+    <string name="menu_tools">Alarmas</string>
+
+    <string name="new_notification">¡Recuerda Hacer Tus Tareas y Atender Eventos!</string>
+    <string name="next">Next</string>
+    <string name="nom_fotos">Mis Fotos de apuntes</string>
+
+    <string name="previous">Previous</string>
+    <string name="search_menu_title">Search</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="select_time">Selecciona la hora</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="t_b_b">Buscar</string>
+    <string name="t_b_g">Guardar Tarea</string>
+    <string name="t_mt_t">Tareas</string>
+    <string name="t_t_f">Fecha de tarea:</string>
+    <string name="tap_b_vm">Regresar</string>
+    <string name="changed_to">Notificación cambiada a las %s</string>
+    <string name="time_selected_is">La hora seleccionada es:</string>
+</resources>

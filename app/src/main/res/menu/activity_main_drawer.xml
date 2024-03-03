@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:checkableBehavior="single">
+        <item
+            android:icon="@drawable/ic_horario"
+            android:id="@+id/nav_home"
+            android:title="@string/menu_home"/>
+        <item
+            android:icon="@drawable/ic_tareas"
+            android:id="@+id/nav_gallery"
+            android:title="@string/menu_gallery"/>
+        <item
+            android:icon="@drawable/ic_eventos"
+            android:id="@+id/nav_slideshow"
+            android:title="Eventos"/>
+    </group>
+    <item
+        android:id="@+id/head_notas"
+        android:title="Notas">
+        <menu>
+            <item
+                android:icon="@drawable/ic_materias"
+                android:id="@+id/nav_send"
+                android:title="@string/menu_send"/>
+            <item
+                android:icon="@drawable/in_formularios"
+                android:id="@+id/nav_form"
+                android:title="Formularios"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/head_extras"
+        android:title="Extras">
+        <menu>
+            <item
+                android:icon="@drawable/ic_ajustes"
+                android:id="@+id/nav_ajustes"
+                android:title="Ajustes"/>
+        </menu>
+    </item>
+</menu>

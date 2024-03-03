@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:orientation="vertical"
+    android:id="@+id/layout_add"
+    android:padding="10dp"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="Días con actividades"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/Blanco" />
+
+    <CheckBox
+        android:id="@+id/cb1"
+        android:textColor="@color/Blanco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lunes" />
+
+    <CheckBox
+        android:id="@+id/cb2"
+        android:textColor="@color/Blanco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Martes" />
+
+    <CheckBox
+        android:textColor="@color/Blanco"
+        android:id="@+id/cb3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Miércoles" />
+
+    <CheckBox
+        android:id="@+id/cb4"
+        android:textColor="@color/Blanco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jueves" />
+
+    <CheckBox
+        android:id="@+id/cb5"
+        android:textColor="@color/Blanco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Viernes" />
+
+    <CheckBox
+        android:id="@+id/cb6"
+        android:textColor="@color/Blanco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sábado" />
+
+    <CheckBox
+        android:id="@+id/cb7"
+        android:textColor="@color/Blanco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Domingo" />
+
+</LinearLayout>

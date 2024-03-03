@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <resources>
+    <color name="purple_200">#8289FF</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="primary">#4952f5</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#ef7d61</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="darker">#131313</color>
+    <color name="primaryDark">#222222</color>
+    <color name="red">#402020</color>
+    <color name="colorPrimary">#8289FF</color>
+    <color name="background">#171717</color>
+    <color name="Blanco">#FFFFFFFF</color>
+</resources> -->
+
+<resources>
+    <color name="purple_200">#2B3743</color>
+
+    <color name="purple_500">#C45FFB</color>
+
+    <color name="primary">#236BFD</color>
+
+    <!-- Used in some main colors as bottom buttons on datePicker #222433-->
+    <color name="purple_700">#222433</color>
+    <color name="lighter_purple">#222433</color>
+
+    <color name="teal_200">#F88F94</color>
+
+    <color name="background17">#171717</color>
+
+    <color name="teal_700">#98C790</color>
+    <color name="black">#FF000000</color>
+    <color name="darker">#131313</color>
+
+    <color name="primaryDark">#2E2E2E</color>
+
+    <color name="red">#402020</color>
+    <color name="colorPrimary">#191A1F</color>
+    <color name="background">#1E192D</color>
+
+    <color name="Blanco">#F4F3F8</color>
+    <color name="light_gray">#dadada</color>
+    <color name="blanco100">#919191</color>
+
+
+    <!-- Para gradientes -->
+    <color name="png">#CF87FF</color>
+    <color name="pdf">#FF5F45</color>
+    <color name="gif">#9CFFE5</color>
+    <color name="jav">#EDFF9C</color>
+    <color name="pyt">#FF9CC5</color>
+    <color name="ppt">#FF5C5C</color>
+    <color name="txt">#BDBDBD</color>
+    <color name="doc">#7383FF</color>
+    <color name="xls">#AFFF87</color>
+    <color name="obj">#FFBB9C</color>
+    <color name="mp4">#FFAD61</color>
+    <color name="mp3">#F4FF61</color>
+    <color name="jpg">#87EDFF</color>
+    <color name="fin">#000022</color>
+
+
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/custom_card"
+                    android:drawableLeft="@mipmap/ic_auto_foreground"
+                    android:drawableTint="#ffffff"
+                    android:text="Respaldo en Drive"
+                    android:textColor="#ffffff"
+                    android:textAllCaps="false"
+                    app:backgroundTint="@color/darker" />
+
+                <Button
+                    android:id="@+id/manual"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textAllCaps="false"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/custom_card"
+                    android:drawableLeft="@mipmap/ic_manual_foreground"
+                    android:drawableTint="#ffffff"
+                    android:text="Respaldo local"
+                    android:textColor="#ffffff"
+                    app:backgroundTint="@color/darker" />
+
+                <Button
+                    android:id="@+id/recuperar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/custom_card"
+                    android:drawableLeft="@mipmap/ic_bot_ant_foreground"
+                    android:drawableTint="#ffffff"
+                    android:text="Restaurar mi información"
+                    android:textColor="#ffffff"
+                    app:backgroundTint="@color/darker" />
+
+                <Button
+                    android:id="@+id/errase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textAllCaps="false"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/custom_card"
+                    android:drawableLeft="@mipmap/ic_borrar_foreground"
+                    android:drawableTint="#ffffff"
+                    android:text="Eliminar todos los datos"
+                    android:textColor="#ffffff"
+                    app:backgroundTint="@color/darker" />
+
+                <Button
+                    android:id="@+id/dias_hor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/custom_card"
+                    android:drawableLeft="@mipmap/ico_hor_foreground"
+                    android:drawableTint="#ffffff"
+                    android:text="Días hábiles de horario"
+                    android:textColor="#ffffff"
+                    android:layout_marginBottom="50dp"
+                    app:backgroundTint="@color/darker" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</RelativeLayout>

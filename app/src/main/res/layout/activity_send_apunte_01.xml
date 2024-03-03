@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:id="@+id/Rel_send_01"
+    android:background="#131313"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        style="?android:attr/progressBarStyle"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/lly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:id="@+id/bt_srch"
+                android:background="#00ffffff"
+                android:layout_width="81dp"
+                android:layout_height="47dp"
+                app:srcCompat="@android:drawable/ic_menu_search"/>
+            <AutoCompleteTextView
+                android:textColor="#ffffff"
+                android:textColorHint="#9f9f9f"
+                android:gravity="center"
+                android:id="@+id/searcher"
+                android:background="#00333333"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Buscar Título"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/bot_fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#bb86fc"
+                android:text="Fecha"
+                android:textColor="#ffffff"
+                app:backgroundTint="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/fecha_selected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#c61313"
+                android:backgroundTint="#717171"
+                android:iconTint="#009c9a9a"
+                android:textColor="#ffffff"
+                app:backgroundTint="@color/colorPrimary"
+                app:rippleColor="#00ffffff" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/button2"
+            android:background="#00ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:backgroundTint="#00ffffff"/>
+    </LinearLayout>
+    <GridView
+        android:id="@+id/gridview"
+        android:padding="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="546dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="60dp"
+        android:verticalSpacing="40dp"
+        android:numColumns="2"
+        android:layout_below="@+id/lly"
+        android:layout_alignParentBottom="true"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/sap_b_tf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sap_b_ssf"
+        android:layout_alignEnd="@+id/sap_b_ssf"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="false"
+        android:contentDescription="TODO"
+        android:visibility="invisible"
+        app:backgroundTint="#7076f1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.96"
+        app:srcCompat="@drawable/ic_camera" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/sap_b_sf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sap_b_tf"
+        android:layout_alignEnd="@+id/sap_b_tf"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:onClick="ver"
+        android:visibility="invisible"
+        app:backgroundTint="@color/teal_700"
+        app:srcCompat="@drawable/ic_view" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/animation"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="355dp"
+        android:layout_marginBottom="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="32dp"
+        android:layout_alignParentEnd="true"
+        app:backgroundTint="#ffffff"
+        app:srcCompat="@mipmap/bt_cruz_foreground"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/sap_b_ssf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/animation"
+        android:layout_alignEnd="@+id/animation"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:visibility="invisible"
+        app:backgroundTint="@color/primary"
+        app:srcCompat="@drawable/ic_docs" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_ap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="32dp"
+        android:clickable="true"
+        app:backgroundTint="@color/teal_200"
+        app:srcCompat="@mipmap/bt_cruz_foreground" />
+</RelativeLayout>

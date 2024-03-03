@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:id="@+id/frame"
+    android:background="#1d1b1b"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button9"
+                android:background="#00ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"/>
+
+            <ImageButton android:id="@+id/Bt_form1"
+                android:background="#00ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_bt_calculoint_org"/>
+
+            <Button android:id="@+id/button8"
+                android:background="#00ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+
+            <ImageButton
+                android:id="@+id/Bt_form2"
+                android:background="#00ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_bt_calculodif_org"/>
+
+            <Button
+                android:id="@+id/button10"
+                android:background="#00ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+
+            <ImageButton
+                android:id="@+id/Bt_form3"
+                android:background="#00ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_bt_calculoalg_org"/>
+
+            <Button
+                android:id="@+id/button11"
+                android:background="#00ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+
+            <ImageButton
+                android:id="@+id/Bt_form4"
+                android:background="#00ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_bt_calculolim_org"/>
+
+            <Button
+                android:id="@+id/button12"
+                android:background="#00ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+
+            <ImageButton
+                android:id="@+id/Bt_form5"
+                android:background="#00ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_bt_calculotri_org"/>
+
+            <Button
+                android:id="@+id/button13"
+                android:background="#00ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

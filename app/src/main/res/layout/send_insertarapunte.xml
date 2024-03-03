@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:orientation="vertical"
+    android:id="@+id/layout_add"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center"
+        android:id="@+id/textView1"
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        android:text="Ingresa tu Apunte o Nota:"/>
+    <EditText
+        android:id="@+id/etAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <requestFocus/>
+    </EditText>
+</LinearLayout>
